@@ -7,7 +7,9 @@ import com.philipcutting.hobbiesandinterestsbasic.databinding.HobbyItemBinding
 import com.philipcutting.hobbiesandinterestsbasic.models.Hobby
 import com.philipcutting.hobbiesandinterestsbasic.respositories.HobbyRepository
 
-class HobbiesViewAdapter: RecyclerView.Adapter<HobbiesViewAdapter.>() {
+class HobbiesViewAdapter
+    : RecyclerView.Adapter<HobbiesViewAdapter.HobbiesViewHolder>()
+{
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): HobbiesViewHolder {
         //  ***** this is the key, very import difference from Activities ****
         val layoutInflater = LayoutInflater.from(parent.context)
@@ -20,7 +22,6 @@ class HobbiesViewAdapter: RecyclerView.Adapter<HobbiesViewAdapter.>() {
     }
 
     override fun getItemCount() = HobbyRepository.hobbies.size
-    }
 
     class HobbiesViewHolder(
         private val binding: HobbyItemBinding
