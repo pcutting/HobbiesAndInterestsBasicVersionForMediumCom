@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="standard_margin">16dp</dimen>
+    <dimen name="half_standard_margin">8dp</dimen>
+    <dimen name="standard_padding">16dp</dimen>
+    <dimen name="standard_font_size">24sp</dimen>
+</resources>
